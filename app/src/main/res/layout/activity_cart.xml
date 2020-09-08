@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivitiy">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Cart"
+        android:id="@+id/cartTextView"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:textSize="35sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPlaceOrder"
+        android:layout_alignParentBottom="true"
+        android:text="PLACE ORDER"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="17sp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerCart"
+        android:layout_above="@+id/cartValue"
+        android:layout_below="@+id/cartTextView">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cartValue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/btnPlaceOrder"
+        android:padding="10dp"/>
+</RelativeLayout>

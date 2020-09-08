@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/sign_up"
+            android:id="@+id/img"
+            android:layout_centerHorizontal="true"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiName"
+            app:startIconTint="@color/colorPrimary"
+            app:startIconDrawable="@drawable/ic_baseline_person_24"
+            android:layout_below="@+id/img">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etName"
+                android:hint="Enter your name"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiContact"
+            app:startIconTint="@color/colorPrimary"
+            app:startIconDrawable="@drawable/ic_baseline_local_phone_24"
+            android:layout_below="@+id/tiName">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etContact"
+                android:hint="Enter your contact number"
+                android:inputType="phone"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiEmail"
+            app:startIconTint="@color/colorPrimary"
+            app:startIconDrawable="@drawable/ic_baseline_email_24"
+            android:layout_below="@+id/tiContact">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etEmail"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiAddress"
+            app:startIconTint="@color/colorPrimary"
+            app:startIconDrawable="@drawable/ic_baseline_email_24"
+            android:layout_below="@+id/tiEmail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etAddress"
+                android:hint="Enter your address"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiPassword"
+            app:startIconTint="@color/colorPrimary"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            android:layout_below="@+id/tiAddress"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPassword"
+                android:hint="Enter password"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiConfPassword"
+            app:startIconTint="@color/colorPrimary"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            android:layout_below="@+id/tiPassword"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etConfPassword"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconTint="@color/colorPrimary"
+            android:layout_below="@id/tiConfPassword"
+            android:id="@+id/btnSignUn"
+            android:layout_marginVertical="30dp"
+            android:text="Sign Up"
+            android:textSize="25sp"
+            android:background="@drawable/btn_shape"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Already have account? Click here to login"
+            android:layout_below="@id/btnSignUn"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-black"
+            android:id="@+id/tvLogin"
+            />
+    </RelativeLayout>
+
+</ScrollView>

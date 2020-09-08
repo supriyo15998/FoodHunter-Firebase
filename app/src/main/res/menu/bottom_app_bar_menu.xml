@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Logout"
+        android:id="@+id/menu_logout"
+        android:icon="@drawable/ic_baseline_exit_to_app_24"
+        app:showAsAction="always"/>
+    <item android:title="Cart"
+        android:id="@+id/menu_cart"
+        android:icon="@drawable/ic_baseline_add_shopping_cart_24"
+        app:showAsAction="always"/>
+</menu>

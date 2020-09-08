@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FoodHunter</string>
+    <string name="title_activity_welcome_bottom">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="choose_to_open_camera">Choose to open camera</string>
+    <string name="choose_to_select_from_gallery">Choose to select from gallery</string>
+</resources>

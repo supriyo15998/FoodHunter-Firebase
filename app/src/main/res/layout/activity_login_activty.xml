@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/sign_up"
+            android:layout_marginTop="90dp"
+            android:id="@+id/imgLogin"
+            android:layout_centerHorizontal="true"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiEmail"
+            app:startIconTint="@color/colorPrimary"
+            app:startIconDrawable="@drawable/ic_baseline_email_24"
+            android:layout_below="@+id/imgLogin">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etEmail"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiPassword"
+            app:startIconTint="@color/colorPrimary"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            android:layout_below="@+id/tiEmail"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPassword"
+                android:hint="Enter password"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconTint="@color/colorPrimary"
+            android:layout_below="@id/tiPassword"
+            android:id="@+id/btnLogin"
+            android:layout_marginVertical="30dp"
+            android:text="Login"
+            android:textSize="25sp"
+            android:background="@drawable/btn_shape"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Don't have an account? Click here to register"
+            android:layout_below="@id/btnLogin"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-black"
+            android:id="@+id/tvRegister"
+            />
+    </RelativeLayout>
+
+</ScrollView>
